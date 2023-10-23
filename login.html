@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/jpg" sizes="32x32">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="script.js" defer></script>
+  <title>Tai sao lai hoc cai nganh nay?</title>
+</head>
+
+<body>
+  <div id="top">
+    <div class="header">
+      <section class="flex">
+   
+        <form action="search.html" method="post" class="search-form">
+           <input type="text" name="search_box" required placeholder="Tìm kiếm " maxlength="100">
+           <button type="submit" class="fas fa-search"></button>
+        </form>
+  
+        <div class="profile">
+           <div class="flex-btn">
+              <a href="login.html" class="option-btn">Đăng nhập</a>
+              <a href="register.html" class="option-btn">Đăng ký</a>
+           </div>
+        </div>
+     </section>
+    </div>
+  </div>
+  <section class="form-container">
+    <form action="home.html" method="get" enctype="multipart/form-data">
+       <h3>Đăng nhập</h3>
+       <p>Email<span>*</span></p>
+       <input type="email" name="email" placeholder="Nhập email" required maxlength="50" class="box">
+       <p>Mật khẩu <span>*</span></p>
+       <input type="password" name="pass" placeholder="Nhập mật khẩu" required maxlength="20" class="box">
+       <input type="submit" value="Đăng nhập" name="submit" class="btn">
+    </form>
+ 
+ </section>
+
+
+</body>
+
+</html>
