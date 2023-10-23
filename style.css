@@ -1,8 +1,12 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
 body {
     background-color: #f7b5f3;
@@ -54,11 +58,71 @@ body {
     width: 50px;
 }
 
-.header {
+.header{
+    position: sticky;
+    top:0; left:0; right: 0;
+    background-color: var(--white);
+    border-bottom: var(--border);
+ }
+ 
+ .header .flex{
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    position: relative;
+    padding: 0rem 1rem;
+ }
+ 
+ .header .flex .search-form{
+    width: 50rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding:1.5rem 2rem;
+    display: flex;
+    gap:2rem;
+ 
+ }
+ 
+ .header .flex .search-form input{
+    width: 100%;
+    font-size: 1.8rem;
+    color:var(--black);
+    background:none;
+ }
+ 
+ .header .flex .search-form button{
+    background:none;
+    font-size: 2rem;
+    cursor: pointer;
+    color:var(--black);
+ }  
+ 
+ .header .flex .search-form button:hover{
+    color: var(--main-color);
+ }
+ 
+ .header .flex .profile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--white);
+    border-radius: 100%;
+    padding: 0%;
+    text-align: right;
+    width: 20rem;
+ }
+ 
+ 
+ .profile .flex-btn {
+    display: flex;
+    gap: 10px; 
 }
+
+.option-btn {
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+}
+
 
 .animated-element {
     cursor: pointer;
